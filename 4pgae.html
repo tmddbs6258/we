@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Calendar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>해피 크리스마스 💕</h1>
+      <div class="day1">
+        <img src="img/d22.jpg" class="day3-photo" />
+        <img src="img/d23.jpg" class="day3-photo" />
+        <img src="img/d26.jpg" class="day3-photo" />
+      </div>
+      <div>
+        <img src="img/d20.jpg" class="day3-photo" />
+        <img src="img/d19.jpg" class="day3-photo" />
+        <img src="img/d27.jpg" class="day3-photo" />
+      </div>
+      <div>
+        <img src="img/d25.jpg" class="day3-photo" />
+        <img src="img/d21.jpg" class="day3-photo" />
+        <img src="img/d24.jpg" class="day3-photo" />
+      </div>
+      <div class="all-button">
+        <a class="back-button" href="3page.html"
+          ><i class="fa-solid fa-arrow-left fa-lg"></i
+        ></a>
+        <a class="next-button" href="final.html"
+          ><i class="fa-solid fa-arrow-right fa-lg"></i
+        ></a>
+      </div>
+    </div>
+    <script src="java.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fa557d9724.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const nextBtn = document.querySelector(".next-button");
+      const container = document.querySelector(".container");
+
+      nextBtn.addEventListener("click", function (e) {
+        e.preventDefault(); // 기본 이동 막기
+        container.classList.add("fade-out"); // 애니메이션 클래스 추가
+
+        setTimeout(() => {
+          window.location.href = nextBtn.href; // 1초 후 페이지 이동
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+html{
+    background-color: #fff0f5;
+}
+body{
+            font-family: "Nanum Pen Script", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f5;
+  font-family: 'Nanum Pen Script', cursive;
+  overflow: hidden; /* 💡 스크롤 막기 */
+  height: 100vh;
+  text-align: center;
+   color: #5e2d2d;
+}
+
+
+.container{
+    text-align: center;
+}
+h1 {
+ color: rgb(8, 4, 4);
+         font-size: 2.2rem;
+        margin-bottom: 20px;
+}
+.day1 {
+}
+.day1-photo{
+      width: 200px;
+      height: 280px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(228, 133, 207, 0.2);
+  margin: 15px;
+}
+.day1-title {
+color:rgb(0, 0, 0);
+opacity: 0.8;
+font-size: 24px;
+}
+
+.next-button,
+.back-button{
+    background-color: #ff5e78;
+    color:white;
+    padding:10px;
+  border-radius: 15px;
+  text-decoration: none;
+  margin:0px 50px;
+}
+.day2-photo{
+        width: 150px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+.day3-photo{
+            width: 150px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+.main-title{
+    color:rgb(6, 10, 9)
+}      
+.fade-out {
+        animation: fadeOut 1s forwards;
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.98);
+        }
+      }
+
+.letter {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        white-space: pre-line;
+        margin-bottom: 50px;
+      }
+
+.heart {
+        position: absolute;
+        top: -50px;
+        font-size: 24px;
+        animation: fall 5s linear infinite;
+        opacity: 0.8;
+      }
+
+      .final-heart {
+        position: fixed;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+      }
+      @keyframes fall {
+        0% {
+          transform: translateY(-50px) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+      .final-heart__back {
+        text-decoration: none;
+      }
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+      .final-heart__heart {
+        font-size: 3rem;
+        animation: heartbeat 1s infinite;
+        display: inline-block;
+      }
+      .fade-in {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }

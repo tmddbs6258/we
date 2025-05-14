@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To My Love</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="main-title">To. 사랑하는 공주님께 💖</h1>
+    <div class="letter fade-in">
+      <div class="letter">
+        공주 200일 기념 러브 캘린더 만들어봤어~<br />
+        아직 실력이 부족하지만 좋아했으면 좋겠다.<br />
+        속상하게 해서 늘 미안하고..ㅠㅠ 항상 고마워!!<br /><br />
+
+        내 옆에 지영이가 있어서 정말 행복해ㅎㅎ<br />
+        오늘 롯데월드 완전 재밌었다 그치??<br />
+        다음에 또 재미있게 놀자!!!ㅋㅋㅋ<br />
+        사랑해~~~
+      </div>
+    </div>
+    <script src="java.js"></script>
+
+    <script>
+      for (let i = 0; i < 30; i++) {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDelay = Math.random() * 5 + "s";
+        heart.innerText = "💗";
+        document.body.appendChild(heart);
+      }
+    </script>
+
+    <div class="final-heart">
+      <a class="final-heart__back" href="index.html"
+        ><span class="final-heart__heart">💗</span></a
+      >
+    </div>
+  </body>
+</html>
