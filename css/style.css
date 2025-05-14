@@ -7,7 +7,6 @@ body{
   padding: 0;
   background-color: #fff0f5;
   font-family: 'Nanum Pen Script', cursive;
-  overflow: hidden; /* 💡 스크롤 막기 */
   height: 100vh;
   text-align: center;
    color: #5e2d2d;
